@@ -22,3 +22,10 @@ for (ufo of tableData){
     duration.innerHTML = ufo.durationMinutes
     comments.innerHTML = ufo.comments
 }
+function showAllRows(){
+  var tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+      tr[i].style.display = "";
+  }
+}
+
