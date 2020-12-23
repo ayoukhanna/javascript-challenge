@@ -29,3 +29,8 @@ function showAllRows(){
   }
 }
 
+function search(searchText){
+  var newSearchString = document.getElementById("datetime").value
+
+var tr, td, i, txtValue;
+tr = table.getElementsByTagName("tr");
