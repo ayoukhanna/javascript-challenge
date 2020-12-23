@@ -51,3 +51,4 @@ for (i = 0; i < tr.length; i++) {
   }
 } 
 }
+d3.selectAll("#filter-btn").on("click",search)
