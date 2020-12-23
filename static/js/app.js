@@ -34,3 +34,20 @@ function search(searchText){
 
 var tr, td, i, txtValue;
 tr = table.getElementsByTagName("tr");
+
+// Loop through all table rows, and hide those who don't match the search query
+for (i = 0; i < tr.length; i++) {
+  td = tr[i].getElementsByTagName("td")[0];
+  //console.log(td)
+  if (td) {
+    txtValue = td.textContent || td.innerText;
+    console.log("txtValue is " + txtValue + " searchText is " + searchString)
+    if (txtValue.indexOf(newSearchString) > -1) {
+        console.log("found match")
+      tr[i].style.display = "";
+    } else {
+      tr[i].style.display = "none";
+    }
+  }
+} 
+}
